@@ -61,5 +61,21 @@
            empty string
       */
     }
+  ],
+  "https://pleiades.stoa.org/places/43496936": [
+    {
+      citation_type: cito:citesForInformation
+      short_title: Wikipedia (English)
+      citation_detail: Vertillum
+      bibliographic_uri: https://www.zotero.org/groups/pleiades/items/CI6F6W7W
+      access_uri: https://en.wikipedia.org/wiki/Vertillum
+    },
+    {
+      citation_type: cito:citesAsRelated
+      short_title: Bénard 2016
+      citation_detail: ""
+      bibliographic_uri: https://www.zotero.org/groups/pleiades/items/4B9D5LSR
+      access_uri: http://www.worldcat.org/oclc/946497659      
+    }
   ]
 }
