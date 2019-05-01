@@ -1,0 +1,65 @@
+{
+  /* each key is a unique, existing Pleiades URI */
+  "https://pleiades.stoa.org/places/872106931":
+  [
+    /* a list of objects, each of which corresponds to a reference that should be added to Pleiades */
+    {
+      citation_type: http://purl.org/spar/cito/citesForInformation
+      /* REQUIRED
+         citation_type values must be one of the following URIs:
+         - "See Further": http://purl.org/spar/cito/citesForInformation
+         - "See Also": http://purl.org/spar/cito/citesAsRelated  
+         - "Related": http://www.w3.org/2000/01/rdf-schema#seeAlso
+         - "Evidence": http://purl.org/spar/cito/citesAsEvidence
+         - "Data Source": http://purl.org/spar/cito/citesAsDataSource
+
+         Values may be abbreviated as follows:
+         - cito:citesForInformation
+         - cito:citesAsRelated
+         - rdfs:seeAlso
+         - cito:citesAsEvidence
+         - cito:citesAsDataSource
+
+         For usage guidance, see: https://pleiades.stoa.org/help/citation-types
+      */
+      short_title: Friedland 2012
+      /* RECOMMENDED
+         short_title must conform to one of the following patterns:
+         - author + year: last name(s) of the first author, followed by first year of publication
+         - standard acronym for a well-known work in the field
+      */
+      citation_detail: ""
+      /* REQUIRED (AS FOLLOWS)
+         if citing the full work (book, article, chapter, site, etc. as indicated in data at
+         bibliographic_uri, then citation_detail must be blank
+         but if citing a range within the full work (e.g., one or a few pages), then plain text
+      */
+      bibliographic_uri: https://www.zotero.org/groups/pleiades/items/JD9VN3TI
+      /* REQUIRED
+         if the work being cited is already in the "Pleiades" group on Zotero, the URI for that 
+         bibliographic record must be used. Failing that, the following may be used as appropriate:
+         - a Zotero URI for a record in another public library
+         - a Worldcat permalink of the form http://www.worldcat.org/oclc/{oclc number} (e.g. http://www.worldcat.org/oclc/1043041706)
+         - a Zenon URI (e.g. https://zenon.dainst.org/Record/000158329)
+         - another bibligraphic data source if approved by pleiades admin in advance
+         - for DOIs, see below
+         - for a bibliographic item not in any digital system, contact pleiades admin in advance
+      */
+      access_uri: ""
+      /* REQUIRED (AS FOLLOWS):
+         - resource is available online via a stable http/https URI, or
+         - if you have a DOI URI of the form http://dx.doi.org/10.1038/nphys1170 that resolves
+            correctly */
+      alternate_uri: ""
+      /* OPTIONAL
+         - if you have an access_uri that works, but also have one from archive.org, hathi trust, or
+           another online, stable archive, it can be included here
+      */
+      other_identifier: ""
+      /* OPTIONAL
+         - online DOIs of the form "doi:10.1594/PANGAEA.726855" are allowed in this field, otherwise
+           empty string
+      */
+    }
+  ]
+}
