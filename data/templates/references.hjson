@@ -1,5 +1,5 @@
 {
-  /* each key is a unique, existing Pleiades URI */
+  /* each key is a unique, existing Pleiades URI that resolves to a place, location, name, or connection resource */
   "https://pleiades.stoa.org/places/872106931":
   [
     /* a list of objects, each of which corresponds to a reference that should be added to Pleiades */
