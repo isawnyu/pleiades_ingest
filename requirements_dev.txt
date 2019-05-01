@@ -2,3 +2,4 @@
 coverage
 nose
 hjson
+jsonschema
