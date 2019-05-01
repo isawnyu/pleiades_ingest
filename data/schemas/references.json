@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "http://pleiades.stoa.org/ingest/schemas/references.json",
+    "type": "object",
+    "patternProperties": {
+        "^https://pleiades.stoa.org/places/[0-9]+": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "citation_type": {
+                        "type": "string",
+                        "pattern": "^((http://purl.org/spar/cito/|cito:)cites(ForInformation|As(Related|Evidence|DataSource))|(http://www.w3.org/2000/01/rdf-schema#|rdfs:)seeAlso)$"
+                    },
+                    "short_title": { "type": "string" },
+                    "citation_detail": { "type": "string" },
+                    "bibliographic_uri": {
+                        "type": "string",
+                        "pattern": "^(https://www.zotero.org/.+/items/[0-9A-Z]+|http://www.worldcat.org/oclc/[0-9]+|https://zenon.dainst.org/Record/[0-9]+)$"
+                    },
+                    "access_uri": {
+                        "type": "string",
+                        "pattern": "^(https?://.+|)$"
+                    },
+                    "alternate_uri": {
+                        "type": "string",
+                        "pattern": "^(https?://.+|)$"
+                    },
+                    "other_identifier": {
+                        "type": "string",
+                        "pattern": "^(doi:[0-9\\.A-Z/]|)$"
+                    }
+                },
+                "additionalProperties": false,
+                "required": ["citation_type", "citation_detail", "bibliographic_uri", "access_uri"]
+            }
+        }
+    },
+    "additionalProperties": false
+}
