@@ -1,0 +1,43 @@
+{
+    "type": "FeatureCollection",
+    "@context": "https://raw.githubusercontent.com/LinkedPasts/linked-places/master/linkedplaces-context-v1.jsonld",
+    "features": [
+        {
+            "@id": "http://syriaca.org/place/8",
+            "type": "Feature",
+            "properties":{ "title": "Amida - ܐܡܝܕ" },
+            "names": [
+                {
+                    "toponym":"ܐܡܝܕ",
+                    "lang":"syr"
+                },
+                {
+                    "toponym":"Amida", 
+                    "lang":"en"
+                },
+                {
+                    "toponym": "ܐܳܡܝ̣ܕ",
+                    "lang": "syr-Syrj"
+                }
+            ],
+            "geometry": {
+                "type": "GeometryCollection",
+                "geometries": [
+                    {
+                        "type": "Point",
+                        "coordinates": [40.210556, 37.981944],
+                        "geo_wkt": "POINT(40.210556  37.981944)",
+                        "certainty": "certain"
+                    }
+                ]
+            },
+            "links": [
+                {
+                    "type": "closeMatch",
+                    "identifier": "http://somegaz.org/places/39847"
+                }
+            ]
+        }
+    ]
+}
+  
